@@ -1,4 +1,8 @@
+-=(CoCo2_Senhor notes)=-
 
+Tested: Working Video 720p, 1080p & Sound
+
+__
 # MiSTer Tandy Color Computer 2 (CoCo2)  and Dragon 32
 
 Originally started by:
