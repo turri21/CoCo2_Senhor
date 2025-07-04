@@ -8,7 +8,8 @@ dd if=DISK.VDK of=DISK.DSK bs=1 skip=12
 
 OR
 
-``Script by FranSX
+```
+Script by FranSX
 
 For the Coco2/Dragon32&64 Core. Dragon VDK (floppy images) do not work without modification. 
 
@@ -21,9 +22,11 @@ IFS=$'\n'
 find . -name '*.VDK' | while read LINE;
 
 do
+
         tail -c 184320 "$LINE" > "$LINE".dsk;
+
 done
-``
+```
 ___
 # MiSTer Tandy Color Computer 2 (CoCo2)  and Dragon 32
 
