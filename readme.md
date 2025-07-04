@@ -21,9 +21,7 @@ IFS=$'\n'
 find . -name '*.VDK' | while read LINE;
 
 do
-
         tail -c 184320 "$LINE" > "$LINE".dsk;
-
 done
 
 ___
