@@ -1,5 +1,32 @@
+-=(CoCo2_Senhor notes)=-
 
+Tested: Working Video 720p, 1080p & Sound.
 
+Dev notes: Added support for VDK files. (They need to be converted first)
+
+dd if=DISK.VDK of=DISK.DSK bs=1 skip=12
+
+OR
+
+Script by FranSX
+
+For the Coco2/Dragon32&64 Core. Dragon VDK (floppy images) do not work without modification. 
+
+This script modifies all the VDKs in a directory and convert to DSKs ready for the Dragon 32/64 Core.
+
+#/bin/bash
+
+IFS=$'\n'
+
+find . -name '*.VDK' | while read LINE;
+
+do
+
+        tail -c 184320 "$LINE" > "$LINE".dsk;
+
+done
+
+___
 # MiSTer Tandy Color Computer 2 (CoCo2)  and Dragon 32
 
 Originally started by:
